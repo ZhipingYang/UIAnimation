@@ -1,19 +1,19 @@
 //
-//  UIAnimationTests.m
-//  UIAnimationTests
+//  storyBoardDemoTests.m
+//  storyBoardDemoTests
 //
-//  Created by XcodeYang on 7/20/15.
+//  Created by XcodeYang on 7/21/15.
 //  Copyright (c) 2015 XcodeYang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface UIAnimationTests : XCTestCase
+@interface storyBoardDemoTests : XCTestCase
 
 @end
 
-@implementation UIAnimationTests
+@implementation storyBoardDemoTests
 
 - (void)setUp {
     [super setUp];

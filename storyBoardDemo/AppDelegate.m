@@ -1,13 +1,12 @@
 //
 //  AppDelegate.m
-//  UIAnimation
+//  storyBoardDemo
 //
-//  Created by XcodeYang on 7/20/15.
+//  Created by XcodeYang on 7/21/15.
 //  Copyright (c) 2015 XcodeYang. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "RootViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,15 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    
-    RootViewController *rootVC = [[RootViewController alloc]init];
-    UINavigationController *rootNav = [[UINavigationController alloc]initWithRootViewController:rootVC];
-    self.window.rootViewController = rootNav;
-    
-    [self.window makeKeyAndVisible];
-    
+    // Override point for customization after application launch.
     return YES;
 }
 
