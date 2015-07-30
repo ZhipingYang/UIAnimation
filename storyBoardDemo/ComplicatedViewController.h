@@ -17,4 +17,6 @@ typedef NS_ENUM(NSInteger, ComplicatedAnimationType) {
 
 @property (nonatomic) ComplicatedAnimationType animationType;
 
+@property (nonatomic) BOOL isComplicated;
+
 @end

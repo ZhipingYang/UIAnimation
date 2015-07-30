@@ -8,15 +8,17 @@
 
 #import "RefreshViewController.h"
 #import "UIScrollView+UzysAnimatedGifPullToRefresh.h"
+#import "OFFCountingAnimationView.h"
 
 #define CELLIDENTIFIER @"CELL"
 
 @interface RefreshViewController ()<UITableViewDataSource,UITableViewDelegate>
 
-@property (nonatomic,strong) NSMutableArray *pData;
-@property (nonatomic,assign) BOOL isLoading;
-@property (nonatomic,assign) BOOL useActivityIndicator;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic,strong) NSMutableArray *pData;
+
+@property (nonatomic,assign) BOOL useActivityIndicator;
+@property (nonatomic,assign) BOOL isLoading;
 
 @end
 
@@ -46,12 +48,6 @@
     [_tableView addTopInsetInPortrait:64 TopInsetInLandscape:44];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -62,6 +58,10 @@
     [super viewDidAppear:animated];
     //    Manually trigger
     [_tableView triggerPullToRefresh];
+}
+
+- (IBAction)dismiss:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark UITableView DataManagement
@@ -112,6 +112,17 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [OFFCountingAnimationView showCountingViewWithStartStr:@"XcodeYangOne"
+                                                 middleStr:@"XcodeYangTwo"
+                                                    endStr:@"XcodeYangThree"
+                                       animateWithDuration:4
+                                                animations:^{
+                                                    
+                                                }];
+
+}
 
 - (NSUInteger)supportedInterfaceOrientations
 {

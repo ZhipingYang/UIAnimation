@@ -13,6 +13,8 @@
 		F014832D1B60886600E7FCBC /* UIScrollView+UzysAnimatedGifPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = F01483291B60886600E7FCBC /* UIScrollView+UzysAnimatedGifPullToRefresh.m */; };
 		F014832E1B60886600E7FCBC /* UzysAnimatedGifActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = F014832B1B60886600E7FCBC /* UzysAnimatedGifActivityIndicator.m */; };
 		F01483311B608A9500E7FCBC /* AnimatedGIFImageSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F01483301B608A9500E7FCBC /* AnimatedGIFImageSerialization.m */; };
+		F03161EC1B68D87E00E2121A /* OFFCountingAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F03161EA1B68D87E00E2121A /* OFFCountingAnimationView.m */; };
+		F03161ED1B68D87E00E2121A /* OFFCountingAnimationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03161EB1B68D87E00E2121A /* OFFCountingAnimationView.xib */; };
 		F089F3D61B5F76C0004E6790 /* pickSchoolAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = F089F3D51B5F76C0004E6790 /* pickSchoolAnimation.gif */; };
 		F089F3D81B5FB4CA004E6790 /* animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = F089F3D71B5FB4CA004E6790 /* animation.gif */; };
 		F089F3DB1B5FB7F6004E6790 /* GifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F089F3DA1B5FB7F6004E6790 /* GifViewController.m */; };
@@ -27,6 +29,11 @@
 		F08C37251B5DEC0100ABD5FF /* ComplicatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F08C37241B5DEC0100ABD5FF /* ComplicatedViewController.m */; };
 		F08C37281B5DEC1A00ABD5FF /* DynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F08C37271B5DEC1A00ABD5FF /* DynamicViewController.m */; };
 		F08C372B1B5DEC2A00ABD5FF /* OfferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F08C372A1B5DEC2A00ABD5FF /* OfferViewController.m */; };
+		F0E3F1261B621A58004C40CA /* JHChainableAnimationsExample1.gif in Resources */ = {isa = PBXBuildFile; fileRef = F0E3F1231B621A58004C40CA /* JHChainableAnimationsExample1.gif */; };
+		F0E3F1271B621A58004C40CA /* JHChainableAnimationsExample2.gif in Resources */ = {isa = PBXBuildFile; fileRef = F0E3F1241B621A58004C40CA /* JHChainableAnimationsExample2.gif */; };
+		F0E3F1281B621A58004C40CA /* JHChainableAnimationsExample3.gif in Resources */ = {isa = PBXBuildFile; fileRef = F0E3F1251B621A58004C40CA /* JHChainableAnimationsExample3.gif */; };
+		F0E3F12A1B621CDA004C40CA /* jjj.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F0E3F1291B621CDA004C40CA /* jjj.jpg */; };
+		F0E3F12C1B622151004C40CA /* 80.png in Resources */ = {isa = PBXBuildFile; fileRef = F0E3F12B1B622151004C40CA /* 80.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,9 @@
 		F014832C1B60886600E7FCBC /* UzysAnimatedGifPullToRefreshConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UzysAnimatedGifPullToRefreshConfiguration.h; sourceTree = "<group>"; };
 		F014832F1B608A9500E7FCBC /* AnimatedGIFImageSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedGIFImageSerialization.h; sourceTree = "<group>"; };
 		F01483301B608A9500E7FCBC /* AnimatedGIFImageSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedGIFImageSerialization.m; sourceTree = "<group>"; };
+		F03161E91B68D87E00E2121A /* OFFCountingAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OFFCountingAnimationView.h; sourceTree = "<group>"; };
+		F03161EA1B68D87E00E2121A /* OFFCountingAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OFFCountingAnimationView.m; sourceTree = "<group>"; };
+		F03161EB1B68D87E00E2121A /* OFFCountingAnimationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OFFCountingAnimationView.xib; sourceTree = "<group>"; };
 		F089F3D31B5F6998004E6790 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		F089F3D51B5F76C0004E6790 /* pickSchoolAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pickSchoolAnimation.gif; sourceTree = "<group>"; };
 		F089F3D71B5FB4CA004E6790 /* animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animation.gif; sourceTree = "<group>"; };
@@ -79,6 +89,11 @@
 		F08C37271B5DEC1A00ABD5FF /* DynamicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicViewController.m; sourceTree = "<group>"; };
 		F08C37291B5DEC2A00ABD5FF /* OfferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferViewController.h; sourceTree = "<group>"; };
 		F08C372A1B5DEC2A00ABD5FF /* OfferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferViewController.m; sourceTree = "<group>"; };
+		F0E3F1231B621A58004C40CA /* JHChainableAnimationsExample1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = JHChainableAnimationsExample1.gif; sourceTree = "<group>"; };
+		F0E3F1241B621A58004C40CA /* JHChainableAnimationsExample2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = JHChainableAnimationsExample2.gif; sourceTree = "<group>"; };
+		F0E3F1251B621A58004C40CA /* JHChainableAnimationsExample3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = JHChainableAnimationsExample3.gif; sourceTree = "<group>"; };
+		F0E3F1291B621CDA004C40CA /* jjj.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jjj.jpg; sourceTree = "<group>"; };
+		F0E3F12B1B622151004C40CA /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,9 +139,28 @@
 			path = RefreshLib;
 			sourceTree = "<group>";
 		};
+		F03161E81B68D85400E2121A /* gifAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				F089F3D91B5FB7F6004E6790 /* GifViewController.h */,
+				F089F3DA1B5FB7F6004E6790 /* GifViewController.m */,
+				F01483241B60868100E7FCBC /* RefreshViewController.h */,
+				F01483251B60868100E7FCBC /* RefreshViewController.m */,
+				F03161E91B68D87E00E2121A /* OFFCountingAnimationView.h */,
+				F03161EA1B68D87E00E2121A /* OFFCountingAnimationView.m */,
+				F03161EB1B68D87E00E2121A /* OFFCountingAnimationView.xib */,
+			);
+			name = gifAnimation;
+			sourceTree = "<group>";
+		};
 		F089F3D41B5F76A1004E6790 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				F0E3F12B1B622151004C40CA /* 80.png */,
+				F0E3F1231B621A58004C40CA /* JHChainableAnimationsExample1.gif */,
+				F0E3F1291B621CDA004C40CA /* jjj.jpg */,
+				F0E3F1241B621A58004C40CA /* JHChainableAnimationsExample2.gif */,
+				F0E3F1251B621A58004C40CA /* JHChainableAnimationsExample3.gif */,
 				F089F3D71B5FB4CA004E6790 /* animation.gif */,
 				F089F3D51B5F76C0004E6790 /* pickSchoolAnimation.gif */,
 			);
@@ -167,10 +201,7 @@
 				F08C37271B5DEC1A00ABD5FF /* DynamicViewController.m */,
 				F08C37291B5DEC2A00ABD5FF /* OfferViewController.h */,
 				F08C372A1B5DEC2A00ABD5FF /* OfferViewController.m */,
-				F089F3D91B5FB7F6004E6790 /* GifViewController.h */,
-				F089F3DA1B5FB7F6004E6790 /* GifViewController.m */,
-				F01483241B60868100E7FCBC /* RefreshViewController.h */,
-				F01483251B60868100E7FCBC /* RefreshViewController.m */,
+				F03161E81B68D85400E2121A /* gifAnimation */,
 				F08C37011B5DD97700ABD5FF /* Main.storyboard */,
 				F08C37041B5DD97700ABD5FF /* Images.xcassets */,
 				F08C37061B5DD97700ABD5FF /* LaunchScreen.xib */,
@@ -288,11 +319,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0E3F1281B621A58004C40CA /* JHChainableAnimationsExample3.gif in Resources */,
 				F08C37031B5DD97700ABD5FF /* Main.storyboard in Resources */,
 				F08C37081B5DD97700ABD5FF /* LaunchScreen.xib in Resources */,
+				F0E3F12A1B621CDA004C40CA /* jjj.jpg in Resources */,
+				F0E3F1261B621A58004C40CA /* JHChainableAnimationsExample1.gif in Resources */,
+				F0E3F12C1B622151004C40CA /* 80.png in Resources */,
 				F089F3D81B5FB4CA004E6790 /* animation.gif in Resources */,
+				F0E3F1271B621A58004C40CA /* JHChainableAnimationsExample2.gif in Resources */,
 				F089F3D61B5F76C0004E6790 /* pickSchoolAnimation.gif in Resources */,
 				F08C37051B5DD97700ABD5FF /* Images.xcassets in Resources */,
+				F03161ED1B68D87E00E2121A /* OFFCountingAnimationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +356,7 @@
 				F01483311B608A9500E7FCBC /* AnimatedGIFImageSerialization.m in Sources */,
 				F08C37221B5DEBD900ABD5FF /* SimpleViewController.m in Sources */,
 				F08C371F1B5DE0DF00ABD5FF /* RootTableViewController.m in Sources */,
+				F03161EC1B68D87E00E2121A /* OFFCountingAnimationView.m in Sources */,
 				F08C37251B5DEC0100ABD5FF /* ComplicatedViewController.m in Sources */,
 				F01483231B6080DE00E7FCBC /* FLAnimatedImageView.m in Sources */,
 				F08C372B1B5DEC2A00ABD5FF /* OfferViewController.m in Sources */,

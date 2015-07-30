@@ -20,6 +20,10 @@
 @end
 
 @implementation SimpleViewController
+{
+    NSInteger pickAnimationType;
+    NSInteger pickTransiotionType;
+}
 
 - (void)viewDidLoad
 {
@@ -45,7 +49,7 @@
             _animationView.center = self.view.center;
             break;
         case SimpleAnimationScale:
-            _animationView.frame = CGRectMake(80, 130, 100, 100);
+            _animationView.frame = CGRectMake(110, 130, 150, 150);
             _animationView.center = self.view.center;
             break;
     }
@@ -108,25 +112,22 @@
         }
     }
     else {
-        titleArray = @[@"Line",@"easyIn",@"easyOut",@"easyInEasyOut",@"spring"];
+        titleArray = @[@"Line",@"easyIn",@"easyOut",@"easyInEasyOut",@"spring",@"bounce"];
     }
     return titleArray[row];
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    static NSInteger type = 0;
-    static NSInteger transiotion = 0;
     
     if (component==0) {
-        type = row;
+        pickAnimationType = row;
     } else {
-        transiotion = row;
+        pickTransiotionType = row;
     }
     
     [self creatAnimationView];
-    [self startAnimation:type transition:transiotion];
-
+    [self startAnimation:pickAnimationType transition:pickTransiotionType];
 }
 
 #pragma mark - animation
@@ -226,7 +227,23 @@
 //path
 - (void)pathAnimation:(NSInteger)type
 {
-    
+    switch (type) {
+        case 0:
+            
+            break;
+        case 1:
+            
+            break;
+        case 2:
+            
+            break;
+        case 3:
+            
+            break;
+            
+        default:
+            break;
+    }
 }
 
 

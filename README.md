@@ -5,6 +5,12 @@
 
 ### 简单动画 & 动画原理
 
+- 静态图片传达信息的有限性
+- 叙述没有办法完整地传达
+- 活泼的动画更显App生命力
+
+
+
 ![image](https://github.com/jhurray/JHChainableAnimations/blob/master/img/JHChainableAnimationsEasing.png?raw=true)
 
 - ###移动-  e)
