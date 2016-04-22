@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F00093F41B6B491F008BBA84 /* GravityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F00093F31B6B491F008BBA84 /* GravityViewController.m */; };
+		F00093FF1B6B492A008BBA84 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F00093F61B6B492A008BBA84 /* MenuViewController.m */; };
+		F00094001B6B492A008BBA84 /* Project1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F00093F81B6B492A008BBA84 /* Project1ViewController.m */; };
+		F00094011B6B492A008BBA84 /* Project2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F00093FA1B6B492A008BBA84 /* Project2ViewController.m */; };
+		F00094021B6B492A008BBA84 /* Project3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F00093FC1B6B492A008BBA84 /* Project3ViewController.m */; };
+		F00094031B6B492A008BBA84 /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F00093FE1B6B492A008BBA84 /* PushViewController.m */; };
+		F00094061B6B493E008BBA84 /* CollosionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F00094051B6B493E008BBA84 /* CollosionViewController.m */; };
+		F00094091B6B4949008BBA84 /* AttachmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F00094081B6B4949008BBA84 /* AttachmentViewController.m */; };
+		F000940C1B6B4957008BBA84 /* SnapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F000940B1B6B4957008BBA84 /* SnapViewController.m */; };
+		F00094101B6B496D008BBA84 /* SphereMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F000940F1B6B496D008BBA84 /* SphereMenu.m */; };
 		F01483221B6080DE00E7FCBC /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F014831F1B6080DE00E7FCBC /* FLAnimatedImage.m */; };
 		F01483231B6080DE00E7FCBC /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F01483211B6080DE00E7FCBC /* FLAnimatedImageView.m */; };
 		F01483261B60868100E7FCBC /* RefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F01483251B60868100E7FCBC /* RefreshViewController.m */; };
@@ -33,7 +43,6 @@
 		F0E3F1271B621A58004C40CA /* JHChainableAnimationsExample2.gif in Resources */ = {isa = PBXBuildFile; fileRef = F0E3F1241B621A58004C40CA /* JHChainableAnimationsExample2.gif */; };
 		F0E3F1281B621A58004C40CA /* JHChainableAnimationsExample3.gif in Resources */ = {isa = PBXBuildFile; fileRef = F0E3F1251B621A58004C40CA /* JHChainableAnimationsExample3.gif */; };
 		F0E3F12A1B621CDA004C40CA /* jjj.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F0E3F1291B621CDA004C40CA /* jjj.jpg */; };
-		F0E3F12C1B622151004C40CA /* 80.png in Resources */ = {isa = PBXBuildFile; fileRef = F0E3F12B1B622151004C40CA /* 80.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +56,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F00093F21B6B491F008BBA84 /* GravityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravityViewController.h; sourceTree = "<group>"; };
+		F00093F31B6B491F008BBA84 /* GravityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravityViewController.m; sourceTree = "<group>"; };
+		F00093F51B6B492A008BBA84 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		F00093F61B6B492A008BBA84 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		F00093F71B6B492A008BBA84 /* Project1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project1ViewController.h; sourceTree = "<group>"; };
+		F00093F81B6B492A008BBA84 /* Project1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project1ViewController.m; sourceTree = "<group>"; };
+		F00093F91B6B492A008BBA84 /* Project2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project2ViewController.h; sourceTree = "<group>"; };
+		F00093FA1B6B492A008BBA84 /* Project2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project2ViewController.m; sourceTree = "<group>"; };
+		F00093FB1B6B492A008BBA84 /* Project3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project3ViewController.h; sourceTree = "<group>"; };
+		F00093FC1B6B492A008BBA84 /* Project3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project3ViewController.m; sourceTree = "<group>"; };
+		F00093FD1B6B492A008BBA84 /* PushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushViewController.h; sourceTree = "<group>"; };
+		F00093FE1B6B492A008BBA84 /* PushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
+		F00094041B6B493E008BBA84 /* CollosionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollosionViewController.h; sourceTree = "<group>"; };
+		F00094051B6B493E008BBA84 /* CollosionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollosionViewController.m; sourceTree = "<group>"; };
+		F00094071B6B4949008BBA84 /* AttachmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttachmentViewController.h; sourceTree = "<group>"; };
+		F00094081B6B4949008BBA84 /* AttachmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttachmentViewController.m; sourceTree = "<group>"; };
+		F000940A1B6B4957008BBA84 /* SnapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapViewController.h; sourceTree = "<group>"; };
+		F000940B1B6B4957008BBA84 /* SnapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapViewController.m; sourceTree = "<group>"; };
+		F000940E1B6B496D008BBA84 /* SphereMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SphereMenu.h; sourceTree = "<group>"; };
+		F000940F1B6B496D008BBA84 /* SphereMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SphereMenu.m; sourceTree = "<group>"; };
 		F014831E1B6080DE00E7FCBC /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
 		F014831F1B6080DE00E7FCBC /* FLAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImage.m; sourceTree = "<group>"; };
 		F01483201B6080DE00E7FCBC /* FLAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImageView.h; sourceTree = "<group>"; };
@@ -93,7 +122,6 @@
 		F0E3F1241B621A58004C40CA /* JHChainableAnimationsExample2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = JHChainableAnimationsExample2.gif; sourceTree = "<group>"; };
 		F0E3F1251B621A58004C40CA /* JHChainableAnimationsExample3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = JHChainableAnimationsExample3.gif; sourceTree = "<group>"; };
 		F0E3F1291B621CDA004C40CA /* jjj.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jjj.jpg; sourceTree = "<group>"; };
-		F0E3F12B1B622151004C40CA /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +142,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F00093F11B6B4917008BBA84 /* Dynamic */ = {
+			isa = PBXGroup;
+			children = (
+				F000940D1B6B496D008BBA84 /* SphereMenu */,
+				F00093F21B6B491F008BBA84 /* GravityViewController.h */,
+				F00093F31B6B491F008BBA84 /* GravityViewController.m */,
+				F00094041B6B493E008BBA84 /* CollosionViewController.h */,
+				F00094051B6B493E008BBA84 /* CollosionViewController.m */,
+				F00094071B6B4949008BBA84 /* AttachmentViewController.h */,
+				F00094081B6B4949008BBA84 /* AttachmentViewController.m */,
+				F000940A1B6B4957008BBA84 /* SnapViewController.h */,
+				F000940B1B6B4957008BBA84 /* SnapViewController.m */,
+				F00093F51B6B492A008BBA84 /* MenuViewController.h */,
+				F00093F61B6B492A008BBA84 /* MenuViewController.m */,
+				F00093F71B6B492A008BBA84 /* Project1ViewController.h */,
+				F00093F81B6B492A008BBA84 /* Project1ViewController.m */,
+				F00093F91B6B492A008BBA84 /* Project2ViewController.h */,
+				F00093FA1B6B492A008BBA84 /* Project2ViewController.m */,
+				F00093FB1B6B492A008BBA84 /* Project3ViewController.h */,
+				F00093FC1B6B492A008BBA84 /* Project3ViewController.m */,
+				F00093FD1B6B492A008BBA84 /* PushViewController.h */,
+				F00093FE1B6B492A008BBA84 /* PushViewController.m */,
+			);
+			path = Dynamic;
+			sourceTree = "<group>";
+		};
+		F000940D1B6B496D008BBA84 /* SphereMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F000940E1B6B496D008BBA84 /* SphereMenu.h */,
+				F000940F1B6B496D008BBA84 /* SphereMenu.m */,
+			);
+			path = SphereMenu;
+			sourceTree = "<group>";
+		};
 		F014831D1B6080DE00E7FCBC /* FLAnimatedImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,7 +219,6 @@
 		F089F3D41B5F76A1004E6790 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				F0E3F12B1B622151004C40CA /* 80.png */,
 				F0E3F1231B621A58004C40CA /* JHChainableAnimationsExample1.gif */,
 				F0E3F1291B621CDA004C40CA /* jjj.jpg */,
 				F0E3F1241B621A58004C40CA /* JHChainableAnimationsExample2.gif */,
@@ -201,6 +263,7 @@
 				F08C37271B5DEC1A00ABD5FF /* DynamicViewController.m */,
 				F08C37291B5DEC2A00ABD5FF /* OfferViewController.h */,
 				F08C372A1B5DEC2A00ABD5FF /* OfferViewController.m */,
+				F00093F11B6B4917008BBA84 /* Dynamic */,
 				F03161E81B68D85400E2121A /* gifAnimation */,
 				F08C37011B5DD97700ABD5FF /* Main.storyboard */,
 				F08C37041B5DD97700ABD5FF /* Images.xcassets */,
@@ -324,7 +387,6 @@
 				F08C37081B5DD97700ABD5FF /* LaunchScreen.xib in Resources */,
 				F0E3F12A1B621CDA004C40CA /* jjj.jpg in Resources */,
 				F0E3F1261B621A58004C40CA /* JHChainableAnimationsExample1.gif in Resources */,
-				F0E3F12C1B622151004C40CA /* 80.png in Resources */,
 				F089F3D81B5FB4CA004E6790 /* animation.gif in Resources */,
 				F0E3F1271B621A58004C40CA /* JHChainableAnimationsExample2.gif in Resources */,
 				F089F3D61B5F76C0004E6790 /* pickSchoolAnimation.gif in Resources */,
@@ -348,20 +410,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				F014832D1B60886600E7FCBC /* UIScrollView+UzysAnimatedGifPullToRefresh.m in Sources */,
+				F00093FF1B6B492A008BBA84 /* MenuViewController.m in Sources */,
 				F08C37281B5DEC1A00ABD5FF /* DynamicViewController.m in Sources */,
 				F014832E1B60886600E7FCBC /* UzysAnimatedGifActivityIndicator.m in Sources */,
+				F00094101B6B496D008BBA84 /* SphereMenu.m in Sources */,
+				F00094091B6B4949008BBA84 /* AttachmentViewController.m in Sources */,
+				F00094011B6B492A008BBA84 /* Project2ViewController.m in Sources */,
+				F00094031B6B492A008BBA84 /* PushViewController.m in Sources */,
 				F08C36FD1B5DD97700ABD5FF /* AppDelegate.m in Sources */,
 				F08C36FA1B5DD97700ABD5FF /* main.m in Sources */,
 				F089F3DB1B5FB7F6004E6790 /* GifViewController.m in Sources */,
 				F01483311B608A9500E7FCBC /* AnimatedGIFImageSerialization.m in Sources */,
+				F00094001B6B492A008BBA84 /* Project1ViewController.m in Sources */,
+				F00093F41B6B491F008BBA84 /* GravityViewController.m in Sources */,
 				F08C37221B5DEBD900ABD5FF /* SimpleViewController.m in Sources */,
+				F00094021B6B492A008BBA84 /* Project3ViewController.m in Sources */,
 				F08C371F1B5DE0DF00ABD5FF /* RootTableViewController.m in Sources */,
+				F000940C1B6B4957008BBA84 /* SnapViewController.m in Sources */,
 				F03161EC1B68D87E00E2121A /* OFFCountingAnimationView.m in Sources */,
 				F08C37251B5DEC0100ABD5FF /* ComplicatedViewController.m in Sources */,
 				F01483231B6080DE00E7FCBC /* FLAnimatedImageView.m in Sources */,
 				F08C372B1B5DEC2A00ABD5FF /* OfferViewController.m in Sources */,
 				F01483221B6080DE00E7FCBC /* FLAnimatedImage.m in Sources */,
 				F01483261B60868100E7FCBC /* RefreshViewController.m in Sources */,
+				F00094061B6B493E008BBA84 /* CollosionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

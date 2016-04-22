@@ -329,7 +329,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="有趣的“51offer”动画（以后）" id="oAT-q3-SZD">
+                            <tableViewSection headerTitle="有趣的“51offer”拓展动画（未来）" id="oAT-q3-SZD">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="p8K-rL-6Mh">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -337,8 +337,8 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="p8K-rL-6Mh" id="hWS-ln-kZx">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gif动画" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGj-3z-o4l">
-                                                    <rect key="frame" x="21" y="11" width="53" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="利用gif动画" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGj-3z-o4l">
+                                                    <rect key="frame" x="21" y="11" width="87" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -457,25 +457,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g1q-I3-Hyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-396" y="-409"/>
-        </scene>
-        <!--过渡效果-->
-        <scene sceneID="6DA-4F-RXK">
-            <objects>
-                <viewController id="Xxz-xk-JYY" customClass="SimpleViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="h5M-Rl-i3x"/>
-                        <viewControllerLayoutGuide type="bottom" id="Muu-Q8-q4G"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Niu-Cd-yD5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.98039215686274506" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="过渡效果" id="MY5-Ax-0h7"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qon-g9-TcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="338" y="-409"/>
         </scene>
         <!--gif动画-->
         <scene sceneID="iZg-5d-tfv">
@@ -610,25 +591,6 @@
             </objects>
             <point key="canvasLocation" x="338" y="1103"/>
         </scene>
-        <!--物理引擎-->
-        <scene sceneID="eYa-2E-AQN">
-            <objects>
-                <viewController id="VV3-vn-muQ" customClass="DynamicViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="f1U-Ma-2mO"/>
-                        <viewControllerLayoutGuide type="bottom" id="Jq7-zd-heB"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="l7J-QG-gl5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="物理引擎" id="Ejm-L4-sP9"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vXI-B2-SO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1133" y="329"/>
-        </scene>
         <!--复合动画-->
         <scene sceneID="8r6-15-D8A">
             <objects>
@@ -696,8 +658,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VLt-Mi-vK7"/>
-        <segue reference="uPa-SU-HGs"/>
         <segue reference="A8s-O6-nnV"/>
+        <segue reference="uPa-SU-HGs"/>
+        <segue reference="K7a-YD-u8b"/>
     </inferredMetricsTieBreakers>
 </document>

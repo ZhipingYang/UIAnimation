@@ -107,7 +107,7 @@
                 titleArray = @[@"放大",@"缩小"];
                 break;
             case SimpleAnimationPath:
-                titleArray = @[@"路径1",@"路径2",@"路径3",@"路径4"];
+                titleArray = @[@"方形",@"心形",@"正五角型",@""];
                 break;
         }
     }
@@ -227,23 +227,56 @@
 //path
 - (void)pathAnimation:(NSInteger)type
 {
+    CAKeyframeAnimation *pathAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    
+    pathAnimation.calculationMode = kCAAnimationPaced;
+    pathAnimation.fillMode = kCAFillModeForwards;
+    pathAnimation.removedOnCompletion = NO;
+    pathAnimation.duration = 3;
+    pathAnimation.repeatCount = 10;
+    
+    UIBezierPath *bezierPath = [UIBezierPath bezierPath];
+
     switch (type) {
-        case 0:
-            
+        case 0:{
+            [bezierPath moveToPoint: CGPointMake(183.5, 152.5)];
+            [bezierPath addCurveToPoint: CGPointMake(316.5, 152.5) controlPoint1: CGPointMake(314.5, 153.5) controlPoint2: CGPointMake(316.5, 152.5)];
+            [bezierPath addLineToPoint: CGPointMake(316.5, 391.5)];
+            [bezierPath addLineToPoint: CGPointMake(56.5, 391.5)];
+            [bezierPath addLineToPoint: CGPointMake(56.5, 152.5)];
+            [bezierPath addCurveToPoint: CGPointMake(183.5, 152.5) controlPoint1: CGPointMake(56.5, 152.5) controlPoint2: CGPointMake(52.5, 151.5)];
+        }
             break;
-        case 1:
+            
+        case 1:{
+            [bezierPath moveToPoint: CGPointMake(175.5, 191.5)];
+            [bezierPath addCurveToPoint: CGPointMake(79.5, 210.5) controlPoint1: CGPointMake(104.5, 158.5) controlPoint2: CGPointMake(79.5, 208.5)];
+            [bezierPath addCurveToPoint: CGPointMake(67.5, 290.5) controlPoint1: CGPointMake(79.5, 212.5) controlPoint2: CGPointMake(55.5, 258.5)];
+            [bezierPath addCurveToPoint: CGPointMake(175.5, 412.5) controlPoint1: CGPointMake(79.5, 322.5) controlPoint2: CGPointMake(175.5, 412.5)];
+            [bezierPath addCurveToPoint: CGPointMake(274.5, 301.5) controlPoint1: CGPointMake(175.5, 412.5) controlPoint2: CGPointMake(261.5, 332.5)];
+            [bezierPath addCurveToPoint: CGPointMake(274.5, 210.5) controlPoint1: CGPointMake(287.5, 270.5) controlPoint2: CGPointMake(288.5, 229.5)];
+            [bezierPath addCurveToPoint: CGPointMake(228.5, 170.5) controlPoint1: CGPointMake(260.5, 191.5) controlPoint2: CGPointMake(251.5, 170.5)];
+            [bezierPath addCurveToPoint: CGPointMake(175.5, 191.5) controlPoint1: CGPointMake(205.5, 170.5) controlPoint2: CGPointMake(175.5, 191.5)];
+        }
             
             break;
         case 2:
-            
-            break;
-        case 3:
-            
+            [bezierPath moveToPoint: CGPointMake(184, 169)];
+            [bezierPath addLineToPoint: CGPointMake(309.54, 262.97)];
+            [bezierPath addLineToPoint: CGPointMake(261.59, 415.03)];
+            [bezierPath addLineToPoint: CGPointMake(106.41, 415.03)];
+            [bezierPath addLineToPoint: CGPointMake(58.46, 262.97)];
+            [bezierPath addLineToPoint: CGPointMake(184, 169)];
             break;
             
         default:
             break;
     }
+
+    pathAnimation.path = bezierPath.CGPath;
+    
+    [_animationView.layer addAnimation:pathAnimation
+                                forKey:@"moveTheSquare"];
 }
 
 

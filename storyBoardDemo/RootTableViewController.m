@@ -12,6 +12,17 @@
 #import "DynamicViewController.h"
 #import "OfferViewController.h"
 
+#import "GravityViewController.h"
+#import "CollosionViewController.h"
+#import "AttachmentViewController.h"
+#import "SnapViewController.h"
+#import "PushViewController.h"
+#import "Project1ViewController.h"
+#import "Project2ViewController.h"
+#import "Project3ViewController.h"
+#import "MenuViewController.h"
+
+
 @interface RootTableViewController ()
 
 @end
@@ -31,6 +42,7 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
+    
     [self.navigationController.navigationBar setBackgroundImage:[self imageWithColor:[UIColor clearColor]] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
 }
@@ -48,6 +60,42 @@
     UIGraphicsEndImageContext();
     
     return image;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{    
+    if (indexPath.section == 2){
+        UIViewController *vc;
+        switch (indexPath.row){
+            case 0:
+                vc = [[GravityViewController alloc]init];
+                break;
+            case 1:
+                vc = [[CollosionViewController alloc]init];
+                break;
+            case 2:
+            case 3:
+                vc = [[AttachmentViewController alloc]init];
+                [(AttachmentViewController *)vc setTangHuang:indexPath.row==3];
+                break;
+            case 4:
+                vc = [[SnapViewController alloc]init];
+                break;
+            case 5:
+                vc = [[PushViewController alloc]init];
+                break;
+            case 6:
+                vc = [[Project1ViewController alloc]init];
+                break;
+            case 7:
+                vc = [[MenuViewController alloc]init];
+                break;
+            case 8:
+                vc = [[Project2ViewController alloc]init];
+                break;
+        }
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

@@ -16,7 +16,7 @@
 @property (weak, nonatomic) IBOutlet FLAnimatedImageView *imageTwo;
 @property (weak, nonatomic) IBOutlet FLAnimatedImageView *imageThree;
 
-@property (strong, nonatomic) UIImageView *imagee;
+@property (strong, nonatomic) UIImageView *image;
 
 
 @end
@@ -37,6 +37,11 @@
         });
     }
     else{
+        
+        _imageObe.hidden = NO;
+        _imageTwo.hidden = NO;
+        _imageThree.hidden = NO;
+
         NSURL *url1 = [[NSBundle mainBundle] URLForResource:@"JHChainableAnimationsExample1" withExtension:@"gif"];
         NSURL *url2 = [[NSBundle mainBundle] URLForResource:@"JHChainableAnimationsExample2" withExtension:@"gif"];
         NSURL *url3 = [[NSBundle mainBundle] URLForResource:@"JHChainableAnimationsExample3" withExtension:@"gif"];
@@ -52,42 +57,45 @@
     }
 }
 
+
 - (void)loadShareImage:(UIImage *)image whiteSide:(BOOL)haveSide
 {
-    [_imagee removeFromSuperview];
-    _imagee = nil;
-    _imagee = [[UIImageView alloc]initWithImage:image];
-    _imagee.frame = CGRectMake(0, 0, 340*0.7, 340*0.7*(image.size.height/image.size.width));
-    _imagee.center = self.view.center;
-    _imagee.layer.shadowColor = [UIColor blackColor].CGColor;
-    _imagee.layer.shadowOffset = CGSizeMake(2, 3);
-    _imagee.layer.shadowRadius = 8;
-    _imagee.layer.shadowOpacity = 0.6;
+    [_image removeFromSuperview];
+    _image = nil;
+    _image = [[UIImageView alloc]initWithImage:image];
+    _image.frame = CGRectMake(0, 0, 340*0.7, 340*0.7*(image.size.height/image.size.width));
+    _image.center = self.view.center;
+    _image.layer.shadowColor = [UIColor blackColor].CGColor;
+    _image.layer.shadowOffset = CGSizeMake(2, 3);
+    _image.layer.shadowRadius = 8;
+    _image.layer.shadowOpacity = 0.6;
     if (haveSide) {
-        _imagee.layer.borderWidth = 5;
-        _imagee.layer.borderColor = [[UIColor whiteColor] CGColor];
+        _image.layer.borderWidth = 5;
+        _image.layer.borderColor = [[UIColor whiteColor] CGColor];
     }
-    [self.view addSubview:_imagee];
+    [self.view addSubview:_image];
     [self startAnimation];
 }
 
+
+
 - (void)startAnimation
 {
-    _imagee.transform = CGAffineTransformRotate(_imagee.transform, (M_PI/6));
-    _imagee.transform = CGAffineTransformScale(_imagee.transform, 4, 4);
-    _imagee.alpha = 0.5;
+    _image.transform = CGAffineTransformRotate(_image.transform, (M_PI/6));
+    _image.transform = CGAffineTransformScale(_image.transform, 4, 4);
+    _image.alpha = 0.5;
     
     [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        _imagee.center = self.view.center;
-        _imagee.transform = CGAffineTransformRotate(_imagee.transform, -M_PI/6);
-        _imagee.transform = CGAffineTransformScale(_imagee.transform, 1/4.0, 1/4.0);
-        _imagee.alpha = 1;
-        _imagee.contentScaleFactor = 1;
+        _image.center = self.view.center;
+        _image.transform = CGAffineTransformRotate(_image.transform, -M_PI/6);
+        _image.transform = CGAffineTransformScale(_image.transform, 1/4.0, 1/4.0);
+        _image.alpha = 1;
+        _image.contentScaleFactor = 1;
         
     } completion:^(BOOL finished) {
         
         [UIView animateWithDuration:0.4 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-            _imagee.transform = CGAffineTransformRotate(_imagee.transform, (-M_PI/12));
+            _image.transform = CGAffineTransformRotate(_image.transform, (-M_PI/12));
         } completion:nil];
     }];
 }

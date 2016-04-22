@@ -101,7 +101,7 @@
     if (rate < 30) {
         _contentLabel.text = _startStr;
     } else if (rate < 85) {
-        _contentLabel.text = _middleStr;
+        _contentLabel.text = [NSString stringWithFormat:@"%@%@",_middleStr,[self getString]];
     } else if (rate < 95) {
         _contentLabel.text = _endStr;
     } else{
@@ -113,6 +113,12 @@
         [self startAnimation:++blockRate];
     });
     _imageView.image = _images[rate];
+}
+
+- (NSString *)getString
+{
+    NSArray *array = @[@"牛津大学牛津大学牛津大学",@"牛津大学北京大学",@"牛津大学牛上海大学",@"牛津大学西安大学",@"牛津大学大学",@"牛津大学大学"];
+    return array[arc4random()%(array.count-1)];
 }
 
 - (void)dismiss
