@@ -351,6 +351,7 @@
 				TargetAttributes = {
 					F08C36F31B5DD97700ABD5FF = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = MLTXA5NHRE;
 					};
 					F08C370C1B5DD97700ABD5FF = {
 						CreatedOnToolsVersion = 6.4;
@@ -559,8 +560,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MLTXA5NHRE;
 				INFOPLIST_FILE = storyBoardDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xcodeyang.steps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -569,8 +572,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MLTXA5NHRE;
 				INFOPLIST_FILE = storyBoardDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xcodeyang.steps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
