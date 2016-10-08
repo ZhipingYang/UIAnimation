@@ -563,7 +563,7 @@
 				DEVELOPMENT_TEAM = MLTXA5NHRE;
 				INFOPLIST_FILE = storyBoardDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xcodeyang.steps;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcodeyang.AnimationTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -575,7 +575,7 @@
 				DEVELOPMENT_TEAM = MLTXA5NHRE;
 				INFOPLIST_FILE = storyBoardDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xcodeyang.steps;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcodeyang.AnimationTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
