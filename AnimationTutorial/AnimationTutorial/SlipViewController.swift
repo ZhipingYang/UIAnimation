@@ -79,7 +79,7 @@ class SlipViewController: UIViewController {
         
         let trans = CABasicAnimation.init(keyPath: "transform.rotation")
         trans.toValue = -M_PI
-        trans.duration = 1/6.0
+        trans.duration = 1/3.0
         
         groupAnim = CAAnimationGroup.creatQueueGroupAnimation(arr: [trans,position])
         target2.layer.add(groupAnim, forKey: "groupAnim")
