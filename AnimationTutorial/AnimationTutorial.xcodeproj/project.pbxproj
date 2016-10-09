@@ -12,6 +12,7 @@
 		651904AB1DA7F37C00E3E1A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651904A91DA7F37C00E3E1A0 /* Main.storyboard */; };
 		651904AD1DA7F37C00E3E1A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651904AC1DA7F37C00E3E1A0 /* Assets.xcassets */; };
 		651904B01DA7F37C00E3E1A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651904AE1DA7F37C00E3E1A0 /* LaunchScreen.storyboard */; };
+		65EDD3551DAA9FD800A32C09 /* SlipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EDD3541DAA9FD800A32C09 /* SlipViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		651904AC1DA7F37C00E3E1A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		651904AF1DA7F37C00E3E1A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		651904B11DA7F37C00E3E1A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65EDD3541DAA9FD800A32C09 /* SlipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlipViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				651904A51DA7F37C00E3E1A0 /* AppDelegate.swift */,
 				651904A71DA7F37C00E3E1A0 /* ViewController.swift */,
+				65EDD3541DAA9FD800A32C09 /* SlipViewController.swift */,
 				651904A91DA7F37C00E3E1A0 /* Main.storyboard */,
 				651904AC1DA7F37C00E3E1A0 /* Assets.xcassets */,
 				651904AE1DA7F37C00E3E1A0 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				651904A81DA7F37C00E3E1A0 /* ViewController.swift in Sources */,
 				651904A61DA7F37C00E3E1A0 /* AppDelegate.swift in Sources */,
+				65EDD3551DAA9FD800A32C09 /* SlipViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +306,7 @@
 				651904B61DA7F37C00E3E1A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
