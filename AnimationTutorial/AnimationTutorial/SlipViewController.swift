@@ -44,9 +44,9 @@ class SlipViewController: UIViewController {
         animation = CAKeyframeAnimation(keyPath: "position")
         animation.duration = 1.0
         animation.values = [
-            NSValue.init(cgPoint: CGPoint.init(x: 375*0.5, y: 100)),
+            NSValue.init(cgPoint: CGPoint.init(x: targetView.frame.midX, y: targetView.frame.midY)),
             NSValue.init(cgPoint: CGPoint.init(x: 375*1.0, y: 200)),
-            NSValue.init(cgPoint: CGPoint.init(x: 375*3.0, y: 500)),
+            NSValue.init(cgPoint: CGPoint.init(x: 375*3.0, y: 200)),
             NSValue.init(cgPoint: CGPoint.init(x: 375*3.5, y: 275))
         ]
         animation.isRemovedOnCompletion = false
@@ -70,19 +70,19 @@ class SlipViewController: UIViewController {
         target2.layer.speed = 0.0
 
         let position = CAKeyframeAnimation(keyPath: "position")
-        position.duration = 1.0
+        position.duration = 2/3.0
         position.values = [
-            NSValue.init(cgPoint: CGPoint.init(x: 375*0.9, y: 100)),
-            NSValue.init(cgPoint: CGPoint.init(x: 375*1.9, y: 200)),
-            NSValue.init(cgPoint: CGPoint.init(x: 375*2.0, y: 300)),
+            NSValue.init(cgPoint: CGPoint.init(x: target2.frame.midX, y: target2.frame.midY)),
+            NSValue.init(cgPoint: CGPoint.init(x: 375+target2.frame.midX, y: 200)),
             NSValue.init(cgPoint: CGPoint.init(x: 375*3.5, y: 475))
         ]
-        target2.layer.add(position, forKey: "position")
         
         let trans = CABasicAnimation.init(keyPath: "transform.rotation")
         trans.toValue = -M_PI
-        trans.duration = 1
-        target2.layer.add(trans, forKey: "trans")
+        trans.duration = 1/6.0
+        
+        groupAnim = CAAnimationGroup.creatQueueGroupAnimation(arr: [trans,position])
+        target2.layer.add(groupAnim, forKey: "groupAnim")
         
         //sub
         let subTrans = CABasicAnimation.init(keyPath: "transform.rotation")
@@ -92,11 +92,11 @@ class SlipViewController: UIViewController {
         target2SubView.layer.add(subTrans, forKey: "subTrans")
         
         //obsever
-        target2SubView.addObserver(self, forKeyPath: "layer.position", options: NSKeyValueObservingOptions.new, context: nil)
+//        target2SubView.addObserver(self, forKeyPath: "transform.rotation", options: NSKeyValueObservingOptions.new, context: nil)
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if keyPath=="layer.position" {
+        if keyPath=="position" {
             target2SubView.center = target2.layer.position
         }
     }
@@ -112,3 +112,23 @@ extension SlipViewController: UIScrollViewDelegate {
     }
     
 }
+
+extension CAAnimationGroup {
+    
+    class func creatQueueGroupAnimation(arr:[CAAnimation]?) -> CAAnimationGroup? {
+        guard let arr = arr, !arr.isEmpty else { return nil }
+        
+        let group = CAAnimationGroup()
+        group.animations = arr
+        group.duration = arr.reduce(0, { (result:CFTimeInterval, animation) -> CFTimeInterval in
+            animation.beginTime = result
+            return result+animation.duration
+        })
+        return group
+    }
+}
+
+
+
+
+
