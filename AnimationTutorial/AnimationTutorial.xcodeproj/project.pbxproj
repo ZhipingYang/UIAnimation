@@ -8,21 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		651904A61DA7F37C00E3E1A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651904A51DA7F37C00E3E1A0 /* AppDelegate.swift */; };
-		651904A81DA7F37C00E3E1A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651904A71DA7F37C00E3E1A0 /* ViewController.swift */; };
+		651904A81DA7F37C00E3E1A0 /* AnimationListTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651904A71DA7F37C00E3E1A0 /* AnimationListTableVC.swift */; };
 		651904AB1DA7F37C00E3E1A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651904A91DA7F37C00E3E1A0 /* Main.storyboard */; };
 		651904AD1DA7F37C00E3E1A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651904AC1DA7F37C00E3E1A0 /* Assets.xcassets */; };
 		651904B01DA7F37C00E3E1A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651904AE1DA7F37C00E3E1A0 /* LaunchScreen.storyboard */; };
+		65C27D0E1DAE8BCD00231282 /* SwipeDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C27D0D1DAE8BCD00231282 /* SwipeDownViewController.swift */; };
+		65C27D111DAE8CA500231282 /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C27D0F1DAE8CA500231282 /* DismissAnimator.swift */; };
+		65C27D121DAE8CA500231282 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C27D101DAE8CA500231282 /* Interactor.swift */; };
+		65C27D141DAE905300231282 /* NaviVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C27D131DAE905300231282 /* NaviVC.swift */; };
+		65C27D171DAE927A00231282 /* SwipeDownCustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C27D161DAE927A00231282 /* SwipeDownCustomVC.swift */; };
+		65C27D191DAE935E00231282 /* SwipeDownRootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C27D181DAE935E00231282 /* SwipeDownRootVC.swift */; };
 		65EDD3551DAA9FD800A32C09 /* SlipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EDD3541DAA9FD800A32C09 /* SlipViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		651904A21DA7F37B00E3E1A0 /* AnimationTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		651904A51DA7F37C00E3E1A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		651904A71DA7F37C00E3E1A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		651904A71DA7F37C00E3E1A0 /* AnimationListTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationListTableVC.swift; sourceTree = "<group>"; };
 		651904AA1DA7F37C00E3E1A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		651904AC1DA7F37C00E3E1A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		651904AF1DA7F37C00E3E1A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		651904B11DA7F37C00E3E1A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65C27D0D1DAE8BCD00231282 /* SwipeDownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeDownViewController.swift; sourceTree = "<group>"; };
+		65C27D0F1DAE8CA500231282 /* DismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissAnimator.swift; sourceTree = "<group>"; };
+		65C27D101DAE8CA500231282 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		65C27D131DAE905300231282 /* NaviVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaviVC.swift; sourceTree = "<group>"; };
+		65C27D161DAE927A00231282 /* SwipeDownCustomVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeDownCustomVC.swift; sourceTree = "<group>"; };
+		65C27D181DAE935E00231282 /* SwipeDownRootVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeDownRootVC.swift; sourceTree = "<group>"; };
 		65EDD3541DAA9FD800A32C09 /* SlipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlipViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,8 +68,9 @@
 		651904A41DA7F37B00E3E1A0 /* AnimationTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				65C27D151DAE90ED00231282 /* SwipeToDismiss */,
 				651904A51DA7F37C00E3E1A0 /* AppDelegate.swift */,
-				651904A71DA7F37C00E3E1A0 /* ViewController.swift */,
+				651904A71DA7F37C00E3E1A0 /* AnimationListTableVC.swift */,
 				65EDD3541DAA9FD800A32C09 /* SlipViewController.swift */,
 				651904A91DA7F37C00E3E1A0 /* Main.storyboard */,
 				651904AC1DA7F37C00E3E1A0 /* Assets.xcassets */,
@@ -65,6 +78,19 @@
 				651904B11DA7F37C00E3E1A0 /* Info.plist */,
 			);
 			path = AnimationTutorial;
+			sourceTree = "<group>";
+		};
+		65C27D151DAE90ED00231282 /* SwipeToDismiss */ = {
+			isa = PBXGroup;
+			children = (
+				65C27D0D1DAE8BCD00231282 /* SwipeDownViewController.swift */,
+				65C27D161DAE927A00231282 /* SwipeDownCustomVC.swift */,
+				65C27D181DAE935E00231282 /* SwipeDownRootVC.swift */,
+				65C27D0F1DAE8CA500231282 /* DismissAnimator.swift */,
+				65C27D101DAE8CA500231282 /* Interactor.swift */,
+				65C27D131DAE905300231282 /* NaviVC.swift */,
+			);
+			name = SwipeToDismiss;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +166,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				651904A81DA7F37C00E3E1A0 /* ViewController.swift in Sources */,
+				65C27D121DAE8CA500231282 /* Interactor.swift in Sources */,
+				651904A81DA7F37C00E3E1A0 /* AnimationListTableVC.swift in Sources */,
 				651904A61DA7F37C00E3E1A0 /* AppDelegate.swift in Sources */,
 				65EDD3551DAA9FD800A32C09 /* SlipViewController.swift in Sources */,
+				65C27D111DAE8CA500231282 /* DismissAnimator.swift in Sources */,
+				65C27D141DAE905300231282 /* NaviVC.swift in Sources */,
+				65C27D171DAE927A00231282 /* SwipeDownCustomVC.swift in Sources */,
+				65C27D191DAE935E00231282 /* SwipeDownRootVC.swift in Sources */,
+				65C27D0E1DAE8BCD00231282 /* SwipeDownViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
