@@ -789,16 +789,191 @@ tap to push next vc</string>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8GN-pE-flJ">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecj-Cv-b9J">
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WVv-4i-RLy">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="hXc-Et-wWR"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q50-Q5-ysY">
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMQ-LQ-IWZ">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N4L-XD-Arj">
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VHz-u8-Xkv">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qxO-mm-PlU">
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rj1-T6-paU">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bde-bf-glW">
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDv-G1-9R3">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wx5-du-p92">
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LKr-hL-TrU">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fda-EE-HsA">
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Rj1-T6-paU" firstAttribute="width" secondItem="WVv-4i-RLy" secondAttribute="width" id="0V0-d3-GG1"/>
+                                            <constraint firstAttribute="bottom" secondItem="N4L-XD-Arj" secondAttribute="bottom" id="1r1-Rx-XMQ"/>
+                                            <constraint firstItem="qxO-mm-PlU" firstAttribute="width" secondItem="WVv-4i-RLy" secondAttribute="width" id="1uY-vA-VGM"/>
+                                            <constraint firstItem="N4L-XD-Arj" firstAttribute="width" secondItem="WVv-4i-RLy" secondAttribute="width" id="2k5-rR-ONC"/>
+                                            <constraint firstItem="Bde-bf-glW" firstAttribute="leading" secondItem="Rj1-T6-paU" secondAttribute="trailing" id="30P-R5-tBG"/>
+                                            <constraint firstItem="LKr-hL-TrU" firstAttribute="top" secondItem="ecj-Cv-b9J" secondAttribute="top" id="33h-NY-mdK"/>
+                                            <constraint firstItem="WVv-4i-RLy" firstAttribute="top" secondItem="ecj-Cv-b9J" secondAttribute="top" id="4Zn-ue-iyq"/>
+                                            <constraint firstItem="LKr-hL-TrU" firstAttribute="leading" secondItem="Wx5-du-p92" secondAttribute="trailing" id="4yT-Pi-4ZL"/>
+                                            <constraint firstItem="Bde-bf-glW" firstAttribute="top" secondItem="ecj-Cv-b9J" secondAttribute="top" id="4za-sC-PIQ"/>
+                                            <constraint firstItem="q50-Q5-ysY" firstAttribute="top" secondItem="ecj-Cv-b9J" secondAttribute="top" id="7E6-85-Zyl"/>
+                                            <constraint firstItem="N4L-XD-Arj" firstAttribute="leading" secondItem="gMQ-LQ-IWZ" secondAttribute="trailing" id="8gb-Nk-AcX"/>
+                                            <constraint firstItem="fda-EE-HsA" firstAttribute="width" secondItem="WVv-4i-RLy" secondAttribute="width" id="B3d-0S-T2Z"/>
+                                            <constraint firstItem="fda-EE-HsA" firstAttribute="top" secondItem="ecj-Cv-b9J" secondAttribute="top" id="B59-Yv-iuH"/>
+                                            <constraint firstItem="q50-Q5-ysY" firstAttribute="width" secondItem="WVv-4i-RLy" secondAttribute="width" id="Bvt-MG-kgk"/>
+                                            <constraint firstItem="gMQ-LQ-IWZ" firstAttribute="leading" secondItem="q50-Q5-ysY" secondAttribute="trailing" id="CCO-Nd-Acw"/>
+                                            <constraint firstItem="VHz-u8-Xkv" firstAttribute="leading" secondItem="N4L-XD-Arj" secondAttribute="trailing" id="CIy-WI-j5C"/>
+                                            <constraint firstItem="N4L-XD-Arj" firstAttribute="top" secondItem="ecj-Cv-b9J" secondAttribute="top" id="CsW-6Q-hJM"/>
+                                            <constraint firstItem="Rj1-T6-paU" firstAttribute="top" secondItem="ecj-Cv-b9J" secondAttribute="top" id="GZd-Py-z3Z"/>
+                                            <constraint firstItem="cDv-G1-9R3" firstAttribute="top" secondItem="ecj-Cv-b9J" secondAttribute="top" id="Iis-mF-dxk"/>
+                                            <constraint firstItem="LKr-hL-TrU" firstAttribute="width" secondItem="WVv-4i-RLy" secondAttribute="width" id="NDX-28-L1g"/>
+                                            <constraint firstItem="Wx5-du-p92" firstAttribute="width" secondItem="WVv-4i-RLy" secondAttribute="width" id="Q0c-gr-eBt"/>
+                                            <constraint firstAttribute="bottom" secondItem="cDv-G1-9R3" secondAttribute="bottom" id="Qg4-Tp-YIj"/>
+                                            <constraint firstAttribute="bottom" secondItem="WVv-4i-RLy" secondAttribute="bottom" id="RGE-s4-wyk"/>
+                                            <constraint firstItem="Wx5-du-p92" firstAttribute="top" secondItem="ecj-Cv-b9J" secondAttribute="top" id="RI5-ux-jfM"/>
+                                            <constraint firstAttribute="bottom" secondItem="qxO-mm-PlU" secondAttribute="bottom" id="Scj-cK-R3b"/>
+                                            <constraint firstItem="cDv-G1-9R3" firstAttribute="leading" secondItem="Bde-bf-glW" secondAttribute="trailing" id="UdX-vC-nIE"/>
+                                            <constraint firstItem="qxO-mm-PlU" firstAttribute="leading" secondItem="VHz-u8-Xkv" secondAttribute="trailing" id="VJc-kw-ZS7"/>
+                                            <constraint firstItem="VHz-u8-Xkv" firstAttribute="width" secondItem="WVv-4i-RLy" secondAttribute="width" id="VsO-gF-si1"/>
+                                            <constraint firstAttribute="bottom" secondItem="Bde-bf-glW" secondAttribute="bottom" id="WRE-l2-No6"/>
+                                            <constraint firstAttribute="bottom" secondItem="gMQ-LQ-IWZ" secondAttribute="bottom" id="bqb-py-HNW"/>
+                                            <constraint firstItem="Rj1-T6-paU" firstAttribute="leading" secondItem="qxO-mm-PlU" secondAttribute="trailing" id="cOB-2O-ap9"/>
+                                            <constraint firstAttribute="bottom" secondItem="q50-Q5-ysY" secondAttribute="bottom" id="cOr-hn-grp"/>
+                                            <constraint firstItem="fda-EE-HsA" firstAttribute="leading" secondItem="LKr-hL-TrU" secondAttribute="trailing" id="cvn-zc-9nQ"/>
+                                            <constraint firstItem="Bde-bf-glW" firstAttribute="width" secondItem="WVv-4i-RLy" secondAttribute="width" id="eO9-lC-eEe"/>
+                                            <constraint firstAttribute="bottom" secondItem="LKr-hL-TrU" secondAttribute="bottom" id="fKe-0c-Gf2"/>
+                                            <constraint firstItem="qxO-mm-PlU" firstAttribute="top" secondItem="ecj-Cv-b9J" secondAttribute="top" id="gwx-p4-Hce"/>
+                                            <constraint firstItem="VHz-u8-Xkv" firstAttribute="top" secondItem="ecj-Cv-b9J" secondAttribute="top" id="hhu-DV-wen"/>
+                                            <constraint firstItem="cDv-G1-9R3" firstAttribute="width" secondItem="WVv-4i-RLy" secondAttribute="width" id="ikZ-7q-nJD"/>
+                                            <constraint firstAttribute="bottom" secondItem="Rj1-T6-paU" secondAttribute="bottom" id="jih-Mo-8cf"/>
+                                            <constraint firstItem="q50-Q5-ysY" firstAttribute="leading" secondItem="WVv-4i-RLy" secondAttribute="trailing" id="kDO-rG-WSo"/>
+                                            <constraint firstAttribute="trailing" secondItem="fda-EE-HsA" secondAttribute="trailing" id="kSv-GU-z5b"/>
+                                            <constraint firstAttribute="bottom" secondItem="VHz-u8-Xkv" secondAttribute="bottom" id="lWX-UL-IpX"/>
+                                            <constraint firstItem="Wx5-du-p92" firstAttribute="leading" secondItem="cDv-G1-9R3" secondAttribute="trailing" id="o6i-Ri-7Sh"/>
+                                            <constraint firstItem="gMQ-LQ-IWZ" firstAttribute="top" secondItem="ecj-Cv-b9J" secondAttribute="top" id="sxQ-3B-MF9"/>
+                                            <constraint firstAttribute="bottom" secondItem="Wx5-du-p92" secondAttribute="bottom" id="uVA-bw-Oax"/>
+                                            <constraint firstAttribute="bottom" secondItem="fda-EE-HsA" secondAttribute="bottom" id="v7e-7f-8op"/>
+                                            <constraint firstItem="gMQ-LQ-IWZ" firstAttribute="width" secondItem="WVv-4i-RLy" secondAttribute="width" id="xZY-Hu-kME"/>
+                                            <constraint firstItem="WVv-4i-RLy" firstAttribute="leading" secondItem="ecj-Cv-b9J" secondAttribute="leading" id="zwi-dh-g17"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ecj-Cv-b9J" firstAttribute="height" secondItem="8GN-pE-flJ" secondAttribute="height" id="IJJ-Wt-dx7"/>
+                                    <constraint firstAttribute="height" constant="120" id="Zyu-lU-6tN"/>
+                                    <constraint firstItem="ecj-Cv-b9J" firstAttribute="top" secondItem="8GN-pE-flJ" secondAttribute="top" id="oFL-UQ-Xsc"/>
+                                    <constraint firstAttribute="trailing" secondItem="ecj-Cv-b9J" secondAttribute="trailing" id="pdz-h6-avs"/>
+                                    <constraint firstAttribute="bottom" secondItem="ecj-Cv-b9J" secondAttribute="bottom" id="ta9-Ti-cFx"/>
+                                    <constraint firstItem="ecj-Cv-b9J" firstAttribute="leading" secondItem="8GN-pE-flJ" secondAttribute="leading" id="vOp-8X-U01"/>
+                                </constraints>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qn8-Qm-v3M">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnl-XW-bzH">
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lxj-Ln-aIq">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7j-gw-bJ6">
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rUe-UC-ifV">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="glZ-5c-mXF"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="znA-00-4Xp">
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKh-U1-vjI">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MBE-58-Z1e">
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="CKh-U1-vjI" secondAttribute="trailing" id="0Ss-Kf-pn6"/>
+                                            <constraint firstAttribute="bottom" secondItem="MBE-58-Z1e" secondAttribute="bottom" id="3Zn-ko-P8a"/>
+                                            <constraint firstAttribute="trailing" secondItem="znA-00-4Xp" secondAttribute="trailing" id="43R-Ls-ht5"/>
+                                            <constraint firstItem="MBE-58-Z1e" firstAttribute="top" secondItem="CKh-U1-vjI" secondAttribute="bottom" id="6x5-Yv-97x"/>
+                                            <constraint firstItem="R7j-gw-bJ6" firstAttribute="leading" secondItem="xnl-XW-bzH" secondAttribute="leading" id="93L-0n-fqA"/>
+                                            <constraint firstItem="CKh-U1-vjI" firstAttribute="leading" secondItem="xnl-XW-bzH" secondAttribute="leading" id="Eqj-9S-3HO"/>
+                                            <constraint firstItem="znA-00-4Xp" firstAttribute="leading" secondItem="xnl-XW-bzH" secondAttribute="leading" id="Gto-B1-11L"/>
+                                            <constraint firstAttribute="trailing" secondItem="rUe-UC-ifV" secondAttribute="trailing" id="HKL-sn-GLg"/>
+                                            <constraint firstItem="rUe-UC-ifV" firstAttribute="height" secondItem="Lxj-Ln-aIq" secondAttribute="height" id="HLG-ko-LZN"/>
+                                            <constraint firstItem="CKh-U1-vjI" firstAttribute="height" secondItem="Lxj-Ln-aIq" secondAttribute="height" id="Jtd-3e-9OW"/>
+                                            <constraint firstAttribute="trailing" secondItem="MBE-58-Z1e" secondAttribute="trailing" id="Yco-4r-IvQ"/>
+                                            <constraint firstItem="MBE-58-Z1e" firstAttribute="leading" secondItem="xnl-XW-bzH" secondAttribute="leading" id="ZDV-VP-vKq"/>
+                                            <constraint firstItem="R7j-gw-bJ6" firstAttribute="height" secondItem="Lxj-Ln-aIq" secondAttribute="height" id="Zcb-9z-zRE"/>
+                                            <constraint firstItem="rUe-UC-ifV" firstAttribute="leading" secondItem="xnl-XW-bzH" secondAttribute="leading" id="a15-45-vO0"/>
+                                            <constraint firstItem="Lxj-Ln-aIq" firstAttribute="leading" secondItem="xnl-XW-bzH" secondAttribute="leading" id="aAn-B0-T6e"/>
+                                            <constraint firstItem="znA-00-4Xp" firstAttribute="height" secondItem="Lxj-Ln-aIq" secondAttribute="height" id="clE-o1-Md6"/>
+                                            <constraint firstAttribute="trailing" secondItem="R7j-gw-bJ6" secondAttribute="trailing" id="jjg-7G-BwU"/>
+                                            <constraint firstAttribute="trailing" secondItem="Lxj-Ln-aIq" secondAttribute="trailing" id="jwU-Ua-ied"/>
+                                            <constraint firstItem="rUe-UC-ifV" firstAttribute="top" secondItem="R7j-gw-bJ6" secondAttribute="bottom" id="kuS-mf-3pE"/>
+                                            <constraint firstItem="MBE-58-Z1e" firstAttribute="height" secondItem="Lxj-Ln-aIq" secondAttribute="height" id="r8q-pZ-M0U"/>
+                                            <constraint firstItem="CKh-U1-vjI" firstAttribute="top" secondItem="znA-00-4Xp" secondAttribute="bottom" id="uJi-w3-cYr"/>
+                                            <constraint firstItem="Lxj-Ln-aIq" firstAttribute="top" secondItem="xnl-XW-bzH" secondAttribute="top" id="ulF-N6-NeG"/>
+                                            <constraint firstItem="znA-00-4Xp" firstAttribute="top" secondItem="rUe-UC-ifV" secondAttribute="bottom" id="v4V-Lb-8jU"/>
+                                            <constraint firstItem="R7j-gw-bJ6" firstAttribute="top" secondItem="Lxj-Ln-aIq" secondAttribute="bottom" id="yVi-us-iH1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="xnl-XW-bzH" secondAttribute="bottom" id="821-Jc-jZk"/>
+                                    <constraint firstItem="xnl-XW-bzH" firstAttribute="width" secondItem="Qn8-Qm-v3M" secondAttribute="width" id="MJ6-Q0-cP3"/>
+                                    <constraint firstItem="xnl-XW-bzH" firstAttribute="top" secondItem="Qn8-Qm-v3M" secondAttribute="top" id="VSJ-Da-Ad7"/>
+                                    <constraint firstAttribute="trailing" secondItem="xnl-XW-bzH" secondAttribute="trailing" id="iuO-Id-FcQ"/>
+                                    <constraint firstAttribute="height" constant="120" id="ram-Tl-F9A"/>
+                                    <constraint firstItem="xnl-XW-bzH" firstAttribute="leading" secondItem="Qn8-Qm-v3M" secondAttribute="leading" id="wGJ-xU-leo"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="Jnd-lV-GFe" firstAttribute="centerY" secondItem="j0q-vj-uoj" secondAttribute="centerY" id="Wvx-Ef-aaK"/>
+                            <constraint firstItem="Qn8-Qm-v3M" firstAttribute="leading" secondItem="j0q-vj-uoj" secondAttribute="leading" id="8Vq-X4-1cV"/>
+                            <constraint firstItem="8GN-pE-flJ" firstAttribute="leading" secondItem="j0q-vj-uoj" secondAttribute="leading" id="J0B-C2-lUq"/>
+                            <constraint firstAttribute="trailing" secondItem="8GN-pE-flJ" secondAttribute="trailing" id="Pen-E7-T1X"/>
+                            <constraint firstItem="Jnd-lV-GFe" firstAttribute="centerY" secondItem="j0q-vj-uoj" secondAttribute="centerY" constant="22" id="Wvx-Ef-aaK"/>
                             <constraint firstItem="Jnd-lV-GFe" firstAttribute="centerX" secondItem="j0q-vj-uoj" secondAttribute="centerX" id="XeL-S0-93c"/>
+                            <constraint firstAttribute="trailing" secondItem="Qn8-Qm-v3M" secondAttribute="trailing" id="Zyn-UW-oeb"/>
+                            <constraint firstItem="yZu-IC-E7x" firstAttribute="top" secondItem="Qn8-Qm-v3M" secondAttribute="bottom" id="bt6-04-3eN"/>
                             <constraint firstItem="Jnd-lV-GFe" firstAttribute="leading" secondItem="j0q-vj-uoj" secondAttribute="leadingMargin" constant="26" id="iW5-RD-2wi"/>
+                            <constraint firstItem="8GN-pE-flJ" firstAttribute="top" secondItem="0Kv-a4-Ff4" secondAttribute="bottom" id="lwm-P6-EFZ"/>
                         </constraints>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="PYl-02-Xfz" appends="YES" id="2Sk-KP-7Ho"/>
                             <outletCollection property="gestureRecognizers" destination="zMe-vo-lKI" appends="YES" id="uu6-iI-k8b"/>
                         </connections>
                     </view>
@@ -811,11 +986,6 @@ tap to push next vc</string>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RN3-ig-36x" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="PYl-02-Xfz" userLabel="Pan First">
-                    <connections>
-                        <action selector="panEvent:" destination="TCm-zm-DN9" id="Ucj-cM-iMb"/>
-                    </connections>
-                </panGestureRecognizer>
                 <tapGestureRecognizer id="zMe-vo-lKI">
                     <connections>
                         <segue destination="QRd-GL-fbU" kind="push" id="kdz-Cq-G42"/>
@@ -843,27 +1013,33 @@ to dismiss view controller </string>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjO-FE-jOc">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="7Ca-8B-io6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="44"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="QRd-GL-fbU" eventType="touchUpInside" id="gDF-NT-SK9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FjO-FE-jOc" secondAttribute="trailing" id="1xv-2t-cYJ"/>
                             <constraint firstItem="oKF-ik-eaL" firstAttribute="centerX" secondItem="MUG-ok-vuR" secondAttribute="centerX" id="CGh-qa-yiL"/>
-                            <constraint firstItem="oKF-ik-eaL" firstAttribute="centerY" secondItem="MUG-ok-vuR" secondAttribute="centerY" id="gJo-LI-o1g"/>
+                            <constraint firstItem="FjO-FE-jOc" firstAttribute="leading" secondItem="MUG-ok-vuR" secondAttribute="leading" id="GHR-em-uUP"/>
+                            <constraint firstItem="oKF-ik-eaL" firstAttribute="centerY" secondItem="MUG-ok-vuR" secondAttribute="centerY" constant="-50" id="gJo-LI-o1g"/>
+                            <constraint firstItem="jpI-aJ-XZd" firstAttribute="top" secondItem="FjO-FE-jOc" secondAttribute="bottom" id="mg8-5G-Hqv"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="sNB-wj-JNp" appends="YES" id="SWz-sF-rY2"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="BgG-1i-FTg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2PU-Gp-anF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="sNB-wj-JNp">
-                    <connections>
-                        <action selector="dismissAlso:" destination="QRd-GL-fbU" id="WfB-lZ-KX2"/>
-                    </connections>
-                </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2959" y="681"/>
+            <point key="canvasLocation" x="2957.5999999999999" y="680.5097451274363"/>
         </scene>
         <!--Swipe Down RootVC-->
         <scene sceneID="aNr-CD-IP1">

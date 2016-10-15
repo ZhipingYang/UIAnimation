@@ -16,54 +16,7 @@ class SwipeDownCustomNewVC: UIViewController {
         title = "Next VC"
     }
     
-    @IBAction func dismissAlso(_ sender: UIPanGestureRecognizer) {
-        
-        
-        let percentThreshold:CGFloat = 0.3
-        
-        // convert y-position to downward pull progress (percentage)
-        let translation = sender.translation(in: view)
-        let verticalMovement = translation.y / view.bounds.height
-        let downwardMovement = fmax(Float(verticalMovement), 0.0)
-        let downwardMovementPercent = fmin(downwardMovement, 1.0)
-        let progress = CGFloat(downwardMovementPercent)
-        
-        guard let interactor = (navigationController as! NaviVC).interactor else { return }
-        
-        switch sender.state {
-        case .began:
-            interactor.hasStarted = true
-            dismiss(animated: true, completion: nil)
-        case .changed:
-            interactor.shouldFinish = progress > percentThreshold
-            interactor.update(progress)
-        case .cancelled:
-            interactor.hasStarted = false
-            interactor.cancel()
-        case .ended:
-            interactor.hasStarted = false
-            interactor.shouldFinish
-                ? interactor.finish()
-                : interactor.cancel()
-        default:
-            break
-        }
+    @IBAction func buttonClick(_ sender: UIButton) {
+        print("button click")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
