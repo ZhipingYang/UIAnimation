@@ -14,7 +14,9 @@
     
     UIDynamicAnimator * _animator;
 
-    UIAttachmentBehavior *_attach;
+    UIAttachmentBehavior *_lastAttach;
+    
+    UIAttachmentBehavior *_firstAttach;
 }
 @end
 
@@ -57,12 +59,19 @@
     [_animator addBehavior:collision];
     
     //约束
-    _attach = [[UIAttachmentBehavior alloc]initWithItem:[_array firstObject] attachedToAnchor:[[_array firstObject] center]];
-    _attach.anchorPoint = CGPointMake(150, 80);
-    _attach.length = 35;
-    _attach.damping = 1;
-    _attach.frequency = 3;
-    [_animator addBehavior:_attach];
+    _firstAttach = [[UIAttachmentBehavior alloc]initWithItem:[_array firstObject] attachedToAnchor:[[_array firstObject] center]];
+    _firstAttach.anchorPoint = CGPointMake(150, 0);
+    _firstAttach.length = 35;
+    _firstAttach.damping = 1;
+    _firstAttach.frequency = 3;
+    [_animator addBehavior:_firstAttach];
+    
+    _lastAttach = [[UIAttachmentBehavior alloc]initWithItem:[_array lastObject] attachedToAnchor:[[_array lastObject] center]];
+    _lastAttach.anchorPoint = CGPointMake(150, 80);
+    _lastAttach.length = 35;
+    _lastAttach.damping = 1;
+    _lastAttach.frequency = 3;
+
     
     for (int i=1; i<_array.count; i++) {
         UIView *view = _array[i];
@@ -79,46 +88,33 @@
 
 - (void)pan:(UIGestureRecognizer *)pan
 {
-    if (![_animator.behaviors containsObject:_attach]) {
-        [_animator addBehavior:_attach];
+    if (pan.state==UIGestureRecognizerStateBegan) {
+        if (![_animator.behaviors containsObject:_lastAttach]) {
+            [_animator addBehavior:_lastAttach];
+        }
     }
-    CGPoint point = [pan locationInView:self.view];
-    [_attach setAnchorPoint:point];
+    
+    if (pan.state==UIGestureRecognizerStateChanged) {
+        CGPoint point = [pan locationInView:self.view];
+        _lastAttach.anchorPoint = point;
+    }
     
     if (pan.state==UIGestureRecognizerStateEnded) {
-        [_animator removeBehavior:_attach];
+        [_animator removeBehavior:_lastAttach];
     }
 }
 
-//-(void)viewDidLayoutSubviews
-//{
-//    for (int i=1; i<_array.count; i++) {
-//        UIView *view = _array[i];
-//        UIView *view2 = _array[i-1];
-//        [self addLineView:view point:view.center point:view2.center];
-//    }
-//}
-
-//- (void)addLineView:(UIView *)view point:(CGPoint)point point:(CGPoint)point2
-//{
-//    for (CALayer *layer in view.layer.sublayers) {
-//        if ([layer isKindOfClass:[CAShapeLayer class]]) {
-//            [layer removeFromSuperlayer];
-//            break;
-//        }
-//    }
-//    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
-//    shapeLayer.fillColor = [[UIColor clearColor] CGColor];
-//    shapeLayer.lineJoin = kCALineJoinRound;
-//    shapeLayer.lineWidth = 3.0f;
-//    shapeLayer.strokeColor = [UIColor yellowColor].CGColor;
-//    shapeLayer.strokeEnd = 1.0f;
-//    [view.layer addSublayer:shapeLayer];
-//    
-//    UIBezierPath *bezierPath = [UIBezierPath bezierPath];
-//    [bezierPath moveToPoint:point];
-//    [bezierPath addLineToPoint:point2];
-//    shapeLayer.path = bezierPath.CGPath;
-//}
+- (void)viewDidLayoutSubviews
+{
+    CGPoint fp = [(UIView *)_array.firstObject center];
+    CGPoint sp = [(UIView *)_array[1] center];
+    
+    CGFloat distance = sqrt((fp.x-sp.x)*(fp.x-sp.x)+(fp.y-sp.y)*(fp.y-sp.y));
+    NSLog(@"%f",distance);
+    if (distance>100) {
+        [_animator removeBehavior:_firstAttach];
+    }
+    
+}
 
 @end
