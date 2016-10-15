@@ -8,6 +8,9 @@
 
 import UIKit
 
+let percentHold:CGFloat = 0.1
+let edge:CGFloat = 10.0
+
 class SwipeDownTableViewController: UITableViewController {
     
     @IBAction func dismiss(_ sender: AnyObject) {
@@ -18,19 +21,19 @@ class SwipeDownTableViewController: UITableViewController {
         
         guard let interactor = (navigationController as! NaviVC).interactor else { return }
         
-        let percentThreshold:CGFloat = 0.3
-        
         let y = scrollView.contentOffset.y
         
-        if y>=0 {
-            interactor.update(0)
+        if y >= -edge {
+            interactor.hasStarted = false
             interactor.shouldFinish = false
             return
         }
-        
-        let progress = abs(y)/UIScreen.main.bounds.height
 
-        interactor.shouldFinish = y < 0 && progress > percentThreshold
+        interactor.hasStarted = true
+        
+        let progress = abs(y-edge)/UIScreen.main.bounds.height
+
+        interactor.shouldFinish = y < 0 && progress > percentHold
         interactor.update(progress)
     }
     
@@ -45,7 +48,7 @@ class SwipeDownTableViewController: UITableViewController {
         
         let y = scrollView.contentOffset.y
         
-        if y<0 && abs(y)/UIScreen.main.bounds.height>0.3 {
+        if y < 0 && abs(y)/UIScreen.main.bounds.height>0.3 {
             interactor.hasStarted = false
             interactor.shouldFinish
                 ? interactor.finish()
@@ -57,5 +60,4 @@ class SwipeDownTableViewController: UITableViewController {
         }
 
     }
-
 }

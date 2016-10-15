@@ -1144,6 +1144,7 @@ to dismiss view controller </string>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="PYl-02-Xfz" appends="YES" id="2Sk-KP-7Ho"/>
+                            <outletCollection property="gestureRecognizers" destination="zMe-vo-lKI" appends="YES" id="uu6-iI-k8b"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Swipe" id="OYJ-r1-jfs">
@@ -1151,13 +1152,59 @@ to dismiss view controller </string>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RN3-ig-36x" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="PYl-02-Xfz">
+                <panGestureRecognizer minimumNumberOfTouches="1" id="PYl-02-Xfz" userLabel="Pan First">
                     <connections>
                         <action selector="panEvent:" destination="TCm-zm-DN9" id="Ucj-cM-iMb"/>
                     </connections>
                 </panGestureRecognizer>
+                <tapGestureRecognizer id="zMe-vo-lKI">
+                    <connections>
+                        <segue destination="QRd-GL-fbU" kind="push" id="kdz-Cq-G42"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2245.5999999999999" y="680.5097451274363"/>
+        </scene>
+        <!--Swipe Down Custom NewVC-->
+        <scene sceneID="roD-hj-3Wc">
+            <objects>
+                <viewController id="QRd-GL-fbU" customClass="SwipeDownCustomNewVC" customModule="AnimationTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Iuf-6B-Ek1"/>
+                        <viewControllerLayoutGuide type="bottom" id="jpI-aJ-XZd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MUG-ok-vuR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKF-ik-eaL">
+                                <string key="text">swipe down or right 
+to dismiss view controller </string>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="oKF-ik-eaL" firstAttribute="centerX" secondItem="MUG-ok-vuR" secondAttribute="centerX" id="CGh-qa-yiL"/>
+                            <constraint firstItem="oKF-ik-eaL" firstAttribute="centerY" secondItem="MUG-ok-vuR" secondAttribute="centerY" id="gJo-LI-o1g"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="sNB-wj-JNp" appends="YES" id="SWz-sF-rY2"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="BgG-1i-FTg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2PU-Gp-anF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="sNB-wj-JNp">
+                    <connections>
+                        <action selector="dismissAlso:" destination="QRd-GL-fbU" id="WfB-lZ-KX2"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2959" y="681"/>
         </scene>
         <!--Swipe Down RootVC-->
         <scene sceneID="aNr-CD-IP1">
