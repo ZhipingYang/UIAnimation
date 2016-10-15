@@ -15,6 +15,7 @@
 		6555A3E91DB259E100C8AC80 /* SwipeDownCustomNewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6555A3E81DB259E100C8AC80 /* SwipeDownCustomNewVC.swift */; };
 		6555A3EC1DB2700300C8AC80 /* SwipeDownScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6555A3EB1DB2700300C8AC80 /* SwipeDownScrollView.swift */; };
 		6555A3EE1DB2833400C8AC80 /* PersentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6555A3ED1DB2833400C8AC80 /* PersentAnimator.swift */; };
+		6555A3F11DB29E2500C8AC80 /* CircleCountingAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6555A3F01DB29E2500C8AC80 /* CircleCountingAnimationView.swift */; };
 		65C27D0E1DAE8BCD00231282 /* SwipeDownTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C27D0D1DAE8BCD00231282 /* SwipeDownTableViewController.swift */; };
 		65C27D111DAE8CA500231282 /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C27D0F1DAE8CA500231282 /* DismissAnimator.swift */; };
 		65C27D121DAE8CA500231282 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C27D101DAE8CA500231282 /* Interactor.swift */; };
@@ -35,6 +36,7 @@
 		6555A3E81DB259E100C8AC80 /* SwipeDownCustomNewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeDownCustomNewVC.swift; sourceTree = "<group>"; };
 		6555A3EB1DB2700300C8AC80 /* SwipeDownScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeDownScrollView.swift; sourceTree = "<group>"; };
 		6555A3ED1DB2833400C8AC80 /* PersentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersentAnimator.swift; sourceTree = "<group>"; };
+		6555A3F01DB29E2500C8AC80 /* CircleCountingAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleCountingAnimationView.swift; sourceTree = "<group>"; };
 		65C27D0D1DAE8BCD00231282 /* SwipeDownTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeDownTableViewController.swift; sourceTree = "<group>"; };
 		65C27D0F1DAE8CA500231282 /* DismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissAnimator.swift; sourceTree = "<group>"; };
 		65C27D101DAE8CA500231282 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 		651904A41DA7F37B00E3E1A0 /* AnimationTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				6555A3EF1DB29DE200C8AC80 /* HUD */,
 				65C27D151DAE90ED00231282 /* SwipeToDismiss */,
 				651904A51DA7F37C00E3E1A0 /* AppDelegate.swift */,
 				651904A71DA7F37C00E3E1A0 /* AnimationListTableVC.swift */,
@@ -93,6 +96,14 @@
 				6555A3EB1DB2700300C8AC80 /* SwipeDownScrollView.swift */,
 			);
 			name = TableView;
+			sourceTree = "<group>";
+		};
+		6555A3EF1DB29DE200C8AC80 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				6555A3F01DB29E2500C8AC80 /* CircleCountingAnimationView.swift */,
+			);
+			name = HUD;
 			sourceTree = "<group>";
 		};
 		65C27D151DAE90ED00231282 /* SwipeToDismiss */ = {
@@ -195,6 +206,7 @@
 				65C27D191DAE935E00231282 /* SwipeDownRootVC.swift in Sources */,
 				6555A3EC1DB2700300C8AC80 /* SwipeDownScrollView.swift in Sources */,
 				65C27D0E1DAE8BCD00231282 /* SwipeDownTableViewController.swift in Sources */,
+				6555A3F11DB29E2500C8AC80 /* CircleCountingAnimationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
