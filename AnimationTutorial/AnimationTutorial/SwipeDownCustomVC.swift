@@ -22,7 +22,7 @@ class SwipeDownCustomVC: UIViewController {
     
     @IBAction func panEvent(_ sender: UIPanGestureRecognizer) {
         
-        let percentThreshold:CGFloat = 0.3
+        let percentThreshold:CGFloat = 0.5
         
         // convert y-position to downward pull progress (percentage)
         let translation = sender.translation(in: view)
@@ -41,7 +41,9 @@ class SwipeDownCustomVC: UIViewController {
             interactor.hasStarted = true
             dismiss(animated: true, completion: nil)
         case .changed:
-            interactor.shouldFinish = progress > percentThreshold
+            let point = sender.velocity(in: view)
+            let maxSpped = max(point.x, point.y)
+            interactor.shouldFinish = maxSpped>500 ? true : (progress > percentThreshold && maxSpped>10)
             interactor.update(progress)
         case .cancelled:
             interactor.hasStarted = false
@@ -56,14 +58,10 @@ class SwipeDownCustomVC: UIViewController {
         }
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func dismissAction(_ sender: AnyObject) {
+        
+        dismiss(animated: true, completion: nil)
+        
     }
-    */
 
 }

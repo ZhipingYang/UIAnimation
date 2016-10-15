@@ -11,13 +11,22 @@ import UIKit
 let percentHold:CGFloat = 0.1
 let edge:CGFloat = 10.0
 
-class SwipeDownTableViewController: UITableViewController {
+class SwipeDownTableViewController: UIViewController,UIScrollViewDelegate {
+    
+    @IBOutlet weak var scrollView: SwipeDownScrollView!
+    
+    
+    override func viewDidLoad() {
+        
+
+    }
+    
     
     @IBAction func dismiss(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil);
     }
 
-    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         guard let interactor = (navigationController as! NaviVC).interactor else { return }
         
@@ -37,13 +46,13 @@ class SwipeDownTableViewController: UITableViewController {
         interactor.update(progress)
     }
     
-    override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         guard let interactor = (navigationController as! NaviVC).interactor else { return }
         interactor.hasStarted = true
         dismiss(animated: true, completion: nil)
     }
     
-    override func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         guard let interactor = (navigationController as! NaviVC).interactor else { return }
         
         let y = scrollView.contentOffset.y

@@ -1,19 +1,21 @@
 //
-//  DismissAnimator.swift
+//  PersentAnimator.swift
 //  AnimationTutorial
 //
-//  Created by Daniel on 12/10/2016.
+//  Created by Daniel on 15/10/2016.
 //  Copyright © 2016 Daniel. All rights reserved.
 //
 
 import UIKit
 
-class DismissAnimator : NSObject {
+class PersentAnimator: NSObject {
+    
 }
 
-extension DismissAnimator : UIViewControllerAnimatedTransitioning {
+extension PersentAnimator : UIViewControllerAnimatedTransitioning {
+    
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 0.3
+        return 0.4
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
@@ -25,14 +27,16 @@ extension DismissAnimator : UIViewControllerAnimatedTransitioning {
         
         let containerView = transitionContext.containerView
         
-        containerView.insertSubview(toVC.view, belowSubview: fromVC.view)
-
+        containerView.addSubview(toVC.view)
+        containerView.insertSubview(fromVC.view, belowSubview: toVC.view)
+        
+        let duration = transitionDuration(using: transitionContext)
+        
         let screenBounds = UIScreen.main.bounds
         let bottomLeftCorner = CGPoint(x: 0, y: screenBounds.height)
         let finalFrame = CGRect(origin: bottomLeftCorner, size: screenBounds.size)
-        
-        let duration = transitionDuration(using: transitionContext)
-        toVC.view.layer.transform = CATransform3DMakeScale(0.9, 0.9, 1)
+        toVC.view.frame = finalFrame
+
         
         UIView.animateKeyframes(
             withDuration: duration,
@@ -40,13 +44,14 @@ extension DismissAnimator : UIViewControllerAnimatedTransitioning {
             options: .calculationModeCubic,
             animations: {
                 
-                fromVC.view.frame = finalFrame
+                toVC.view.frame = screenBounds
                 
-                UIView.addKeyframe(withRelativeStartTime: 1/4, relativeDuration: 3/4, animations: {
-                    toVC.view.layer.transform = CATransform3DMakeScale(1, 1, 1)
+                UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 3/4, animations: {
+                    fromVC.view.layer.transform = CATransform3DMakeScale(0.9, 0.9, 1)
                 })
             },
             completion: { _ in
+                fromVC.view.layer.transform = CATransform3DMakeScale(1, 1, 1)
                 transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
         })
     }
