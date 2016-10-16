@@ -18,7 +18,6 @@ class SlipViewController: UIViewController {
     @IBOutlet weak var target2SubView: UIView!
     
     
-    
     var animation:CAKeyframeAnimation!
     var colorAnim:CAKeyframeAnimation!
     
@@ -95,11 +94,11 @@ class SlipViewController: UIViewController {
 //        target2SubView.addObserver(self, forKeyPath: "transform.rotation", options: NSKeyValueObservingOptions.new, context: nil)
     }
     
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if keyPath=="position" {
-            target2SubView.center = target2.layer.position
-        }
-    }
+//    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+//        if keyPath=="position" {
+//            target2SubView.center = target2.layer.position
+//        }
+//    }
 }
 
 extension SlipViewController: UIScrollViewDelegate {

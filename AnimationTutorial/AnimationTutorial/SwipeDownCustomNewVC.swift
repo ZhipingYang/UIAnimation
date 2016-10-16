@@ -14,6 +14,10 @@ class SwipeDownCustomNewVC: UIViewController {
         super.viewDidLoad()
 
         title = "Next VC"
+        
+        navigationController?.navigationBar.backIndicatorImage = UIImage()
+        navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage()
+        navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "返回", style: .plain, target: self, action: #selector(self.buttonClick(_:)))
     }
     
     @IBAction func buttonClick(_ sender: UIButton) {

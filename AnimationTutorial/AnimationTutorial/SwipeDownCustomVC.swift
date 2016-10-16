@@ -15,4 +15,12 @@ class SwipeDownCustomVC: UIViewController {
         
     }
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        navigationController?.navigationBar.backIndicatorImage = UIImage(named: "back")
+        navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "back")
+        navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "返回", style: .plain, target: self, action: #selector(self.dismissAction(_:)))
+    }
+
 }

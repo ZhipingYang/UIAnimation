@@ -1,30 +1,29 @@
 //
-//  NaviVC.swift
+//  PhotoViewController.swift
 //  AnimationTutorial
 //
-//  Created by Daniel on 12/10/2016.
+//  Created by Daniel on 16/10/2016.
 //  Copyright © 2016 Daniel. All rights reserved.
 //
 
 import UIKit
 
-class NaviVC: UINavigationController {
+class PhotoViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    
     var interactor:Interactor? = nil
-
+    var image:UIImage? = nil
+    
+    var originFrame = CGRect.zero
+    
     override func viewDidLoad() {
-        
-        self.navigationBar.barTintColor = UIColor.purple
-        self.navigationBar.tintColor = UIColor.white
-        self.navigationBar.titleTextAttributes = [
-            NSForegroundColorAttributeName : UIColor.white
-        ]
-        
-        let pan = UIPanGestureRecognizer.init(target: self, action: #selector(self.panEvent(_:)))
-        view.addGestureRecognizer(pan)
+        super.viewDidLoad()
+        imageView.image = image
+        // Do any additional setup after loading the view.
     }
     
-    func panEvent(_ sender: UIPanGestureRecognizer) {
+    @IBAction func panDismiss(_ sender: UIPanGestureRecognizer) {
         
         let percentThreshold:CGFloat = 0.5
         
@@ -36,13 +35,7 @@ class NaviVC: UINavigationController {
         let rightMovement = fmax(Float(horizonMovement), 0.0)
         let downwardMovementPercent = fmin(downwardMovement, 1.0)
         let rightMovementPercent = fmin(rightMovement, 1.0)
-        
-        let progress:CGFloat
-        if viewControllers.count>1 {
-            progress = CGFloat(downwardMovementPercent)
-        } else {
-            progress = CGFloat(max(rightMovementPercent, downwardMovementPercent))
-        }
+        let progress = CGFloat(max(rightMovementPercent, downwardMovementPercent))
         
         guard let interactor = interactor else { return }
         
@@ -67,5 +60,6 @@ class NaviVC: UINavigationController {
             break
         }
     }
+    
 
 }
